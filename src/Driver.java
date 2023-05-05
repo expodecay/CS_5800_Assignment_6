@@ -10,17 +10,21 @@ public class Driver {
         atmMachine.insertCard();
         atmMachine.insertPin(1234);*/
 
-        Chain chainCalc1 = new AddNumbers();
-        Chain chainCalc2 = new SubtractNumbers();
-        Chain chainCalc3 = new MultNumbers();
-        Chain chainCalc4 = new DivNumbers();
+        SnackDispenseHandler snack1 = new SodaDispenser();
+        SnackDispenseHandler snack2 = new SodaDispenser();
+        SnackDispenseHandler snack3 = new ChipDispenser();
+        SnackDispenseHandler snack4 = new ChipDispenser();
+        SnackDispenseHandler snack5 = new ChochlateDispenser();
+        SnackDispenseHandler snack6 = new ChochlateDispenser();
 
-        chainCalc1.setNextChain(chainCalc2);
-        chainCalc2.setNextChain(chainCalc3);
-        chainCalc3.setNextChain(chainCalc4);
+        snack1.setNextChain(snack2);
+        snack2.setNextChain(snack3);
+        snack3.setNextChain(snack4);
+        snack4.setNextChain(snack5);
+        snack5.setNextChain(snack6);
 
-        Numbers request = new Numbers(4, 2, "mult");
+        Snack request = new Snack("pepsi");
 
-        chainCalc1.calculate(request);
+        snack1.calculate(request);
     }
 }

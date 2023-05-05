@@ -64,6 +64,6 @@ public class DispensingSnack implements StateOfVendingMachine{
             vendingMachine.setSnickersInMachine(vendingMachine.snicker_in_machine - 1);
             snack1.calculate(request);
         }
-        vendingMachine.setVendingMachineState(vendingMachine.isIdle());
+        vendingMachine.setVendingMachineState(vendingMachine.getIdle());
     }
 }

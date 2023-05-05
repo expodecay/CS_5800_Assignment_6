@@ -5,12 +5,12 @@ public class Driver {
 
         vendingMachine.idle();
         vendingMachine.selectSnack("s1");
-        vendingMachine.insertMoney(5.25);
+        vendingMachine.insertMoney(5.00);
         vendingMachine.dispenseSnack();
 
         vendingMachine.idle();
-        vendingMachine.selectSnack("s3");
-        vendingMachine.insertMoney(5.25);
+        vendingMachine.selectSnack("s6");
+        vendingMachine.insertMoney(5.00);
         vendingMachine.dispenseSnack();
 
         vendingMachine.idle();

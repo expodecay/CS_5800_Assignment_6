@@ -18,6 +18,13 @@ public class VendingMachine {
     int kitkat_in_machine = 10;
     int snicker_in_machine = 10;
 
+    private final double coke_price = 2.00;
+    private final double pepsi_price = 2.00;
+    private final double cheetos_price = 1.50;
+    private final double doritos_price = 1.50;
+    private final double kitkat_price = 1.75;
+    private final double snickers_price = 1.75;
+
     String item_location;
 
     boolean enough_items_in_machine = true;
@@ -62,6 +69,25 @@ public class VendingMachine {
         item_location = location;
     }
 
+    public double getCokePrice(){
+        return coke_price;
+    }
+    public double getPepsiPrice(){
+        return pepsi_price;
+    }
+    public double getCheetosPrice(){
+        return cheetos_price;
+    }
+    public double getDoritosPrice(){
+        return doritos_price;
+    }
+    public double getKitkatPrice(){
+        return kitkat_price;
+    }
+    public double getSnickersPrice(){
+        return snickers_price;
+    }
+
     public void idle(){
         machine_state.idle();
     }
@@ -76,11 +102,11 @@ public class VendingMachine {
     }
 
     // return state objects
-    public StateOfVendingMachine isIdle(){
+    public StateOfVendingMachine getIdle(){
         return idle;
     }
 
-    public StateOfVendingMachine isWaitingForMoney(){
+    public StateOfVendingMachine getWaitingForMoney(){
         return  waiting_for_money;
     }
 

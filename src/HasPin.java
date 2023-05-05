@@ -1,4 +1,4 @@
-public class HasPin implements ATMState{
+public class HasPin implements ATMState {
 
     ATMMachine atmMachine;
 

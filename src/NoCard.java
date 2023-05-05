@@ -1,4 +1,4 @@
-public class NoCard implements ATMState{
+public class NoCard implements ATMState {
 
     ATMMachine atmMachine;
 

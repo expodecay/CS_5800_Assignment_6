@@ -1,4 +1,4 @@
-public class HasCard implements ATMState{
+public class HasCard implements ATMState {
 
     ATMMachine atmMachine;
 

@@ -18,13 +18,15 @@ public class VendingMachine {
     int kitkat_in_machine = 10;
     int snicker_in_machine = 10;
 
+    String item_location;
+
     boolean enough_items_in_machine = true;
 
     public VendingMachine(){
         idle = new Idle(this);
-        /*waiting_for_money = new WaitingForMoney(this);
+        waiting_for_money = new WaitingForMoney(this);
         dispensing_snack = new DispensingSnack(this);
-        machine_out_of_order = new OutOfItem(this);*/
+        /*machine_out_of_order = new OutOfItem(this);*/
 
         machine_state = idle;
 
@@ -54,6 +56,10 @@ public class VendingMachine {
     }
     public void setSnickersInMachine(int new_snickers_count){
         snicker_in_machine = new_snickers_count;
+    }
+
+    public void setItemLocation(String location){
+        item_location = location;
     }
 
     public void idle(){

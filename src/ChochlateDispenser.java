@@ -10,7 +10,7 @@ public class ChochlateDispenser implements SnackDispenseHandler {
 
     @Override
     public void calculate(Snack request) {
-        if(request.getSnackWanted() == "kitkat" || request.getSnackWanted() == "snikers"){
+        if(request.getSnackWanted() == "kitkat" || request.getSnackWanted() == "snickers"){
             System.out.println("CHOCOLATE Dispenser is delivering: " + request.getSnackWanted());
         }else{
             nextInChain.calculate(request); // if add can't handle it, pass to the next in chain

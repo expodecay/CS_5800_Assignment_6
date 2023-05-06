@@ -1,5 +1,3 @@
-import javax.swing.plaf.nimbus.State;
-
 public class VendingMachine {
 
     /////////////////////Context(Account)/////////////////////
@@ -11,12 +9,12 @@ public class VendingMachine {
 
     StateOfVendingMachine machine_state;
 
-    int coke_in_machine = 10;
-    int pepsi_in_machine = 10;
-    int cheetos_in_machine = 10;
-    int doritos_in_machine = 10;
-    int kitkat_in_machine = 10;
-    int snicker_in_machine = 10;
+    int coke_in_machine = 5;
+    int pepsi_in_machine = 4;
+    int cheetos_in_machine = 3;
+    int doritos_in_machine = 4;
+    int kitkat_in_machine = 2;
+    int snicker_in_machine = 1;
 
     private final double coke_price = 2.00;
     private final double pepsi_price = 2.00;

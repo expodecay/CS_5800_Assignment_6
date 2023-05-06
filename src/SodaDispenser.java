@@ -13,7 +13,7 @@ public class SodaDispenser implements SnackDispenseHandler {
         if(request.getSnackWanted() == "coke" || request.getSnackWanted() =="pepsi"){
             System.out.println("SODA Dispenser is delivering: " + request.getSnackWanted());
         }else{
-            nextInChain.calculate(request); // if add can't handle it, pass to the next in chain
+            nextInChain.calculate(request); // if can't handle it, pass to the next in chain
         }
     }
 }

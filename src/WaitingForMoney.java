@@ -44,7 +44,6 @@ public class WaitingForMoney implements StateOfVendingMachine{
             vendingMachine.setVendingMachineState(vendingMachine.getDispensingSnack());
             System.out.println("Your Change: $" + (amount - vendingMachine.getSnickersPrice()));
         }
-
     }
 
     @Override

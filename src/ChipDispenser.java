@@ -13,7 +13,7 @@ public class ChipDispenser implements SnackDispenseHandler {
         if(request.getSnackWanted() == "cheetos" || request.getSnackWanted() == "doritos"){
             System.out.println("CHIP Dispenser is delivering: " + request.getSnackWanted());
         }else{
-            nextInChain.calculate(request); // if add can't handle it, pass to the next in chain
+            nextInChain.calculate(request); // if can't handle it, pass to the next in chain
         }
     }
 }

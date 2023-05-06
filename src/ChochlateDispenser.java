@@ -13,7 +13,7 @@ public class ChochlateDispenser implements SnackDispenseHandler {
         if(request.getSnackWanted() == "kitkat" || request.getSnackWanted() == "snickers"){
             System.out.println("CHOCOLATE Dispenser is delivering: " + request.getSnackWanted());
         }else{
-            nextInChain.calculate(request); // if add can't handle it, pass to the next in chain
+            nextInChain.calculate(request); // end of chain
         }
     }
 }
